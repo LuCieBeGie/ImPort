@@ -19,10 +19,11 @@ function Skills() {
             <br />
             {
                 isVisible && myTechnicalSkills.map((skill, skillId) => {
+                        console.log(skill.image);
                     return <div className="shownSkill" alt={skill.title} key={skillId}>
                         <hr />
                         <span>{skill.title}</span>
-                        <span><img src={skill.url} alt={skill.title} /></span>
+                        <span><img src={process.env.PUBLIC_URL + skill.image} alt={skill.title} /></span>
                     </div>
                 })
             }
