@@ -1,0 +1,1 @@
+export const GET_MY_TECKSKILLS = 'get_my_teckSkills';

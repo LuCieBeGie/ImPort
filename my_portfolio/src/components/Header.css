@@ -1,0 +1,10 @@
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+nav li {
+    text-shadow: rgb(62, 62, 62) 1px 0 10px;
+
+}

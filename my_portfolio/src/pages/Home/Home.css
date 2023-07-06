@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'La Belle Aurora';
+    src: url('../../assets/fonts/LaBelleAurore-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Sourse Pro';
+    src: url('../../assets/fonts/SourceSerifPro-BoldItalic.ttf') format('ttf');
+}
+
+.container {
+    background-image: url('../../assets/images/background.jpg');
+    max-width: 1500px;
+    width: 100%;
+    min-height: 100vmin;
+    background-position: fixed center;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangle {
+    text-align: center;
+    min-width: 150px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 7%;
+    border-radius: 10px;
+    background-color: rgb(121, 128, 133, 0.5);
+    filter: drop-shadow(10px 10px 5px #ffffff);
+    color: rgb(2, 19, 54);
+}
+
+.triangle div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    text-shadow: rgb(121, 128, 133) 1px 0 10px;
+}
+
+.triangle h1 {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sourse Pro', sans-serif;
+    font-weight: 900;
+    animation: anim-lineUp 5s forwards;
+}
+
+.download {
+    display: inline;
+    width: fit-content;
+    margin-top: 3%;
+    padding: 3%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(2, 19, 54);
+    color: #e6f3ff;
+    text-shadow: rgb(62, 62, 62) 1px 0 10px;
+    box-shadow: 2px 2px 15px -5px rgb(62, 62, 62);
+    animation: anim-lineUp 15s forwards, shine 5s infinite;
+}
+
+.download:hover {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+    background-color: rgb(230, 243, 255);
+    color: rgb(2, 19, 54);
+    text-shadow: rgb(218, 218, 218) 1px 0 10px;
+}
+
+.download a {
+    all: unset;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes shine {
+    0% {
+        color: #182a6b;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #e6f3ff, 0 0 1.5rem #1b64b8,
+            -0.2rem 0.1rem 1rem #55659e, 0.2rem 0.1rem 1rem #55659e,
+            0 -0.5rem 2rem #25283e, 0 0.5rem 3rem #30323e;
+    }
+}

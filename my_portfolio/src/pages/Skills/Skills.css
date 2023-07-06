@@ -1,0 +1,63 @@
+.background {
+    background-image: url('../../assets/images/skills.jpg');
+    max-width: 1500px;
+    width: 100%;
+    min-height: 100vmin;
+    background-position: fixed center;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background button {
+    font-size: 1.5em;
+    margin-left: 4%;
+    display: inline;
+    width: fit-content;
+    margin-top: 3%;
+    padding: 1%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(2, 19, 54);
+    color: #e6f3ff;
+    text-shadow: rgb(62, 62, 62) 1px 0 10px;
+    box-shadow: 2px 2px 15px -5px rgb(62, 62, 62);
+}
+
+.background button:hover {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+    background-color: rgb(230, 243, 255);
+    color: rgb(2, 19, 54);
+    text-shadow: rgb(92, 90, 90) 1px 0 10px;
+    box-shadow: 2px 2px 15px -5px rgb(62, 62, 62);
+    animation: shine 5s infinite;
+}
+
+.shownSkill img {
+    /* background-image: url('../../assets/images/html.png'); */
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    background-position: center;
+}
+
+@keyframes shine {
+    0% {
+        color: #182a6b;
+        /* text-shadow: none; */
+    }
+
+    100% {
+        color: #352d35;
+        text-shadow: 0 0 0.6rem #1b64b8, 0 0 1.5rem #1b64b8,
+            -0.2rem 0.1rem 1rem #55659e, 0.2rem 0.1rem 1rem #55659e,
+            0 -0.5rem 2rem #25283e, 0 0.5rem 3rem #30323e;
+    }
+}
