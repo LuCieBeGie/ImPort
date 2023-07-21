@@ -10,23 +10,28 @@ function Skills() {
 
     return (<>
         <div className="background">
-            <button
-                onClick={() => {
-                    console.log(myTechnicalSkills);
-                    toggleVisibility(!isVisible)
-                }}>Technical Skills</button>
-            <button>Personal Skills</button>
-            <br />
-            {
-                isVisible && myTechnicalSkills.map((skill, skillId) => {
+            <div className="button-container">
+                <button
+                    onClick={() => {
+                        console.log(myTechnicalSkills);
+                        toggleVisibility(!isVisible)
+                    }}>
+                    Technical Skills
+                </button>
+                <button>Personal Skills</button>
+            </div>
+            <figure >
+                {
+                    isVisible && myTechnicalSkills.map((skill, skillId) => {
                         console.log(skill.image);
-                    return <div className="shownSkill" alt={skill.title} key={skillId}>
-                        <hr />
-                        <span>{skill.title}</span>
-                        <span><img src={process.env.PUBLIC_URL + skill.image} alt={skill.title} /></span>
-                    </div>
-                })
-            }
+                        return <div className="shownSkill" alt={skill.title} key={skillId}>
+                            <hr />
+                            <span><img src={process.env.PUBLIC_URL + skill.image} alt={skill.title} /></span>
+                            <span>{skill.title}</span>
+                        </div>
+                    })
+                }
+            </figure>
         </div>
     </>)
 }
