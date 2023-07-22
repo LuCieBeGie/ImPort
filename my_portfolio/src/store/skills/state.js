@@ -1,4 +1,3 @@
-import { HTML } from '../../assets/images/html.png';
 export const skillState = {
     myTechnicalSkills:
         [
@@ -12,13 +11,12 @@ export const skillState = {
         ],
     mySoftSkills:
         [
-            'critical thinking',
-            'analysis',
-            'problem solving',
-            'self-management',
-            'emotional intelligence',
-            'adaptability',
-            'creativity',
+            { id: 1, name: 'Critical thinking' },
+            { id: 2, name: 'Analysis' },
+            { id: 3, name: 'Problem solving' },
+            { id: 4, name: 'Self-management' },
+            { id: 5, name: 'Emotional intelligence' },
+            { id: 6, name: 'Adaptability' },
+            { id: 7, name: 'Creativity' },
         ]
-
 }

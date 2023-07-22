@@ -1,4 +1,4 @@
-import { GET_MY_TECKSKILLS, HIDE_MY_SKILLS } from "./type";
+import { GET_MY_TECKSKILLS, GET_MY_SOFT_SKILLS } from "./type";
 
 export function getMyTeckSkills(data) {
     return {
@@ -6,11 +6,11 @@ export function getMyTeckSkills(data) {
         payload: data,
     }
 }
-// export function toggleMySkill(data) {
-//     return {
-//         type: HIDE_MY_SKILLS,
-//         payload: data
-//     }
-// }
+export function getMySoftSkills(data) {
+    return {
+        type: GET_MY_SOFT_SKILLS,
+        payload: data
+    }
+}
 
 

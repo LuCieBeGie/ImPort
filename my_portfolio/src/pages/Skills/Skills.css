@@ -25,6 +25,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5%;
 }
 
 figure span {
@@ -32,12 +33,16 @@ figure span {
     align-items: center;
     justify-content: center;
     animation: shine 5s infinite;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     stroke: #7ac7fe;
     font-size: 15px;
     stroke-width: 2;
+    padding: 1%;
 }
 
+figure div {
+    margin: 2%;
+}
 
 .background button {
     font-size: 1.5em;
@@ -72,15 +77,17 @@ figure span {
     color: white;
     background-position: center;
     background-size: cover;
-    animation: rotating 2s linear infinite;
+    animation: rotating 3s linear infinite;
+}
+
+h1{
+    animation: shine 5s infinite;
 }
 
 @keyframes shine {
     0% {
         color: #182a6b;
-        /* text-shadow: none; */
     }
-
     100% {
         color: #352d35;
         text-shadow: 0 0 0.6rem #1b64b8, 0 0 1.5rem #1b64b8,
@@ -93,7 +100,6 @@ figure span {
     from {
         -webkit-transform: rotateY(0deg);
     }
-
     to {
         -webkit-transform: rotateY(360deg);
     }

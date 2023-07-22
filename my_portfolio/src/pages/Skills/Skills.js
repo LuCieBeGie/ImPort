@@ -1,29 +1,32 @@
 import { useDispatch, useSelector } from "react-redux"
 import './Skills.css'
-import { GET_MY_TECKSKILLS } from "../../store/skills/type";
 import { useState } from "react";
 
 function Skills() {
     const dispatch = useDispatch()
-    const { myTechnicalSkills } = useSelector(state => state.techSkills)
+    const { myTechnicalSkills } = useSelector(state => state.skills)
+    const { mySoftSkills } = useSelector(state => state.skills)
     const [isVisible, toggleVisibility] = useState(false);
-
+    const [isVisibleSoftSkills, toggleVisibilitySoftSkills] = useState(false);
     return (<>
         <div className="background">
             <div className="button-container">
                 <button
                     onClick={() => {
-                        console.log(myTechnicalSkills);
-                        toggleVisibility(!isVisible)
+                        toggleVisibility(!isVisible);
+                        toggleVisibilitySoftSkills(false)
                     }}>
                     Technical Skills
                 </button>
-                <button>Personal Skills</button>
+                <button onClick={() => {
+                    console.log('you got it')
+                    toggleVisibilitySoftSkills(!isVisibleSoftSkills)
+                    toggleVisibility(false)
+                }}>Personal Skills</button>
             </div>
-            <figure >
+            <figure>
                 {
                     isVisible && myTechnicalSkills.map((skill, skillId) => {
-                        console.log(skill.image);
                         return <div className="shownSkill" alt={skill.title} key={skillId}>
                             <hr />
                             <span><img src={process.env.PUBLIC_URL + skill.image} alt={skill.title} /></span>
@@ -32,6 +35,11 @@ function Skills() {
                     })
                 }
             </figure>
+            {
+                isVisibleSoftSkills && mySoftSkills.map((sSkill, sSkillId) => {
+                    return <h1 key={sSkillId}> {sSkill.name}</h1>
+                })
+            }
         </div>
     </>)
 }
