@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.efdc3ff2.css",
-    "main.js": "/Portfolio/static/js/main.775e2dec.js",
+    "main.css": "/Portfolio/static/css/main.b16f0767.css",
+    "main.js": "/Portfolio/static/js/main.e2683a83.js",
     "static/js/787.128fc6e9.chunk.js": "/Portfolio/static/js/787.128fc6e9.chunk.js",
-    "static/media/skills.jpg": "/Portfolio/static/media/skills.a1f818f0de8210759c75.jpg",
+    "static/media/project_background.jpg": "/Portfolio/static/media/project_background.344212d9f36dc8a4d5a2.jpg",
+    "static/media/skills.jpg": "/Portfolio/static/media/skills.781e8aa555156b013f5e.jpg",
     "static/media/background.jpg": "/Portfolio/static/media/background.3b84c5e5c261dbffac8e.jpg",
     "static/media/CV.pdf": "/Portfolio/static/media/CV.ff47cbfd9f95babb3bb4.pdf",
     "static/media/SourceSerifPro-BoldItalic.ttf": "/Portfolio/static/media/SourceSerifPro-BoldItalic.9f9b1eb2d82e26bb2f4a.ttf",
     "static/media/LaBelleAurore-Regular.ttf": "/Portfolio/static/media/LaBelleAurore-Regular.bc43b15661f3e942b3f6.ttf",
     "index.html": "/Portfolio/index.html",
-    "main.efdc3ff2.css.map": "/Portfolio/static/css/main.efdc3ff2.css.map",
-    "main.775e2dec.js.map": "/Portfolio/static/js/main.775e2dec.js.map",
+    "main.b16f0767.css.map": "/Portfolio/static/css/main.b16f0767.css.map",
+    "main.e2683a83.js.map": "/Portfolio/static/js/main.e2683a83.js.map",
     "787.128fc6e9.chunk.js.map": "/Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efdc3ff2.css",
-    "static/js/main.775e2dec.js"
+    "static/css/main.b16f0767.css",
+    "static/js/main.e2683a83.js"
   ]
 }
