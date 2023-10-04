@@ -17,7 +17,7 @@ function Header() {
                 </Link>
                 <ul className="nav navbar-nav navbar-right" >
                     <li>
-                        <NavLink to="/Portfolio/home"
+                        <NavLink to="/Portfolio/"
                             className={(navData) => (navData.isActive ? "active" : 'none')}>
                             <GoHome size="20px" />
                         </NavLink>
