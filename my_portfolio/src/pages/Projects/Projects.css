@@ -1,0 +1,40 @@
+.project_background {
+    background-image: url('../../assets/images/project_background.jpg');
+    background-position: fixed center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1500px;
+    width: 100%;
+    min-height: 100vmin;
+    padding: 5%;
+    color: black;
+}
+
+h1 {
+    top: 0;
+    font-size: 3em;
+    float: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 2%;
+    padding-bottom: 13px;
+}
+
+.division {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.division div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    margin: 5%;
+}

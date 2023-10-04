@@ -24,7 +24,7 @@ function Skills() {
                     toggleVisibility(false)
                 }}>Personal Skills</button>
             </div>
-            <figure>
+            <figure className="skill">
                 {
                     isVisible && myTechnicalSkills.map((skill, skillId) => {
                         return <div className="shownSkill" alt={skill.title} key={skillId}>

@@ -1,13 +1,13 @@
 .background {
     background-image: url('../../assets/images/skills.jpg');
+    background-position: fixed center;
+    background-repeat: no-repeat;
+    background-size: cover;
     max-width: 1500px;
     width: 100%;
     min-height: 100vmin;
-    background-position: fixed center;
-    background-size: cover;
-    position: absolute;
-    background-repeat: no-repeat;
     padding: 5%;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,14 +21,15 @@
     justify-content: center;
 }
 
-figure {
+.skill {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5%;
+    margin: 7%;
+    flex-wrap: wrap;
 }
 
-figure span {
+.skill span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,8 +41,10 @@ figure span {
     padding: 1%;
 }
 
-figure div {
-    margin: 2%;
+.skill div {
+    flex: 1 0 21%;
+    /* margin: 5px; */
+    margin-left: 4%;
 }
 
 .background button {
@@ -80,7 +83,7 @@ figure div {
     animation: rotating 3s linear infinite;
 }
 
-h1{
+h1 {
     animation: shine 5s infinite;
 }
 
@@ -88,6 +91,7 @@ h1{
     0% {
         color: #182a6b;
     }
+
     100% {
         color: #352d35;
         text-shadow: 0 0 0.6rem #1b64b8, 0 0 1.5rem #1b64b8,
@@ -100,6 +104,7 @@ h1{
     from {
         -webkit-transform: rotateY(0deg);
     }
+
     to {
         -webkit-transform: rotateY(360deg);
     }
