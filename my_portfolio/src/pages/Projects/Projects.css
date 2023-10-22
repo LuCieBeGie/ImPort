@@ -1,40 +1,51 @@
 .project_background {
-    background-image: url('../../assets/images/project_background.jpg');
-    background-position: fixed center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 1500px;
-    width: 100%;
-    min-height: 100vmin;
-    padding: 5%;
-    color: black;
+  background-image: url("../../assets/images/project_background.jpg");
+  background-position: fixed center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1500px;
+  width: 100%;
+  min-height: 100vmin;
+  padding: 5%;
+  color: black;
 }
 
 h1 {
-    top: 0;
-    font-size: 3em;
-    float: right;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-right: 2%;
-    padding-bottom: 13px;
+  top: 0;
+  font-size: 3em;
+  float: right;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 2%;
+  padding-bottom: 13px;
+}
+
+figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(21, 33, 67);
+  background-color: rgba(165, 165, 165, 0.5);
+  border-radius: 10px;
+  flex-wrap: wrap;
 }
 
 .division {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  width: 50%;
+  flex: 1;
+  height: 75%;
+  text-align: center;
+  margin: 5%;
+  padding: 3%;
 }
 
-.division div {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1;
-    margin: 5%;
+.image_wrapper {
+  min-width: 100%;
+}
+.image_wrapper img {
+  width: 250px;
+  margin: auto;
+  height: fit-content;
 }
