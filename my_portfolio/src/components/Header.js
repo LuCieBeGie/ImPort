@@ -1,5 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { GrReactjs } from 'react-icons/gr'
+import { FaAddressCard } from 'react-icons/fa'
 import { GoHome, GoProject } from 'react-icons/go'
 import { GiSkills } from 'react-icons/gi'
 import { ImEnvelop } from 'react-icons/im'
@@ -34,7 +35,13 @@ function Header() {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Portfolio/contacts">
+                        <NavLink to="/Portfolio/aboutMe">
+                            <FaAddressCard size="20px" />
+                            {/* <ImEnvelop size="20px" /> */}
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/Portfolio/contactMe">
                             <ImEnvelop size="20px" />
                         </NavLink>
                     </li>

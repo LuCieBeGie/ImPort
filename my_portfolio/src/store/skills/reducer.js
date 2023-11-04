@@ -8,8 +8,8 @@ export const mySkillReducer = (state = skillState, option) => {
             break;
         case GET_MY_SOFT_SKILLS:
             state.mySoftSkills = option.payload;
-        default:
             break;
+        default: break
     }
     return { ...state }
 }

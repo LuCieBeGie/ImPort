@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'Sourse Pro';
-    src: url('../../assets/fonts/SourceSerifPro-BoldItalic.ttf') format('ttf');
+    font-family: 'SourceSerifPro';
+    src: url('../../assets/fonts/SourceSerifPro-Bold.ttf') format('ttf');
 }
 
 .container {
@@ -48,7 +48,7 @@
     margin-top: 2%;
     display: flex;
     flex-direction: column;
-    font-family: 'Sourse Pro', sans-serif;
+    font-family: 'SourceSerifPro';
     font-weight: 900;
     animation: anim-lineUp 5s forwards;
 }

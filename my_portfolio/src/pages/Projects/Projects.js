@@ -6,14 +6,12 @@ function Projects() {
     const { myProjects } = useSelector(state => state.projects)
     return (<>
         <div className="project_background">
-
             <h1>My Projects</h1>
             <figure className="">
                 {myProjects.map((project, projectId) => {
                     return <div key={projectId} className="division" >
                         <span className="image_wrapper">
                             <img
-                                // style={{ width: 150, height: 100 }}
                                 src={process.env.PUBLIC_URL + project.image}
                                 alt='project image' />
                         </span>
@@ -21,7 +19,7 @@ function Projects() {
                             <h2>{project.name}</h2>
                             <span>{project.description}</span>
                             <br />
-                            <a href={project.url} target="_blank">GitHub 👉</a>
+                            <a href={project.url} target="_blank" className="gitLink">GitHub 👉</a>
                         </figcaption>
                     </div>
                 })}
