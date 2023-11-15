@@ -19,7 +19,6 @@ function Skills() {
                     Technical Skills
                 </button>
                 <button onClick={() => {
-                    console.log('you got it')
                     toggleVisibilitySoftSkills(!isVisibleSoftSkills)
                     toggleVisibility(false)
                 }}>Personal Skills</button>
