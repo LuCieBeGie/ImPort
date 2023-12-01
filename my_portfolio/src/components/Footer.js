@@ -4,18 +4,16 @@ import { FaAddressCard } from 'react-icons/fa'
 import { GoHome, GoProject } from 'react-icons/go'
 import { GiSkills } from 'react-icons/gi'
 import { ImEnvelop } from 'react-icons/im'
-import './Header.css';
+import './Footer.css';
 
 const classNameFunc = ({ isActive }) => (isActive ? "active" : "");
 
-function Header() {
+function Footer() {
 
     return (<>
         <nav className="navbar navbar-inverse sticky-top">
             <div className="container-fluid" >
-                <Link className="navbar-brand">LH
-                    <GrReactjs />
-                </Link>
+    
                 <ul className="nav navbar-nav navbar-right" >
                     <li>
                         <NavLink to="/Portfolio/"
@@ -51,4 +49,4 @@ function Header() {
         <Outlet />
     </>)
 }
-export default Header
+export default Footer

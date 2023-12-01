@@ -15,7 +15,7 @@
     min-height: 100vmin;
     background-position: fixed center;
     background-size: cover;
-    position: absolute;
+    /* position: absolute; */
     background-repeat: no-repeat;
     padding: 5%;
     display: flex;

@@ -5,12 +5,14 @@ import Projects from "../pages/Projects/Projects"
 import Skills from "../pages/Skills/Skills"
 import Home from "../pages/Home/Home"
 import ContactMe from "../pages/ContactMe/ContactMe"
+import Footer from "../components/Footer"
 
 function Router() {
     return (<>
         <BrowserRouter>
+            <Header />
             <Routes>
-                <Route path='/Portfolio' element={<Header />}>
+                <Route>
                     <Route path='/Portfolio/' element={<Home />} />
                     <Route path='/Portfolio/aboutMe' element={<AboutMe />} />
                     <Route path='/Portfolio/projects' element={<Projects />} />
@@ -18,6 +20,7 @@ function Router() {
                     <Route path='/Portfolio/contactMe' element={<ContactMe />} />
                 </Route>
             </Routes>
+            <Footer />
         </BrowserRouter>
     </>)
 }

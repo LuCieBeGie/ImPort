@@ -7,7 +7,7 @@
     width: 100%;
     min-height: 100vmin;
     padding: 5%;
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     align-items: center;
     justify-content: center;
