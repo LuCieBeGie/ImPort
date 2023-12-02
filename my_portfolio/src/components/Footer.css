@@ -1,0 +1,18 @@
+/* .sticky-bottom {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+nav li {
+    text-shadow: rgb(62, 62, 62) 1px 0 10px;
+}
+
+.active {
+    color: #fff;
+    box-shadow: 1px 1px 2px rgb(65, 65, 65, 0.5),
+        0 0 25px rgba(255, 0, 230, 0.5),
+        0 0 5px rgba(130, 0, 82, 0.5);
+} */

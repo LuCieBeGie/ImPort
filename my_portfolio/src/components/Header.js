@@ -11,12 +11,13 @@ const classNameFunc = ({ isActive }) => (isActive ? "active" : "");
 function Header() {
 
     return (<>
-        <nav className="navbar navbar-inverse sticky-top">
+
+        <nav className="navbar navbar-expand-lg bg-dark sticky-top">
             <div className="container-fluid" >
                 <Link className="navbar-brand">LH
                     <GrReactjs />
                 </Link>
-                <ul className="nav navbar-nav navbar-right" >
+                <ul>
                     <li>
                         <NavLink to="/Portfolio/"
                             className={(navData) => (navData.isActive ? "active" : 'none')}>

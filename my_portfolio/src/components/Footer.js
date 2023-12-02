@@ -4,6 +4,8 @@ import { FaAddressCard } from 'react-icons/fa'
 import { GoHome, GoProject } from 'react-icons/go'
 import { GiSkills } from 'react-icons/gi'
 import { ImEnvelop } from 'react-icons/im'
+import { TbBrandLinkedin } from "react-icons/tb";
+
 import './Footer.css';
 
 const classNameFunc = ({ isActive }) => (isActive ? "active" : "");
@@ -11,14 +13,14 @@ const classNameFunc = ({ isActive }) => (isActive ? "active" : "");
 function Footer() {
 
     return (<>
-        <nav className="navbar navbar-inverse sticky-top">
+        <nav className="navbar navbar-inverse sticky-bottom">
             <div className="container-fluid" >
     
-                <ul className="nav navbar-nav navbar-right" >
+                <ul className="nav navbar-nav justify-content-center" >
                     <li>
                         <NavLink to="/Portfolio/"
                             className={(navData) => (navData.isActive ? "active" : 'none')}>
-                            <GoHome size="20px" />
+                            <TbBrandLinkedin size="25px" />
                         </NavLink>
                     </li>
                     <li>
