@@ -6,13 +6,13 @@ import { GiSkills } from 'react-icons/gi'
 import { ImEnvelop } from 'react-icons/im'
 import './Header.css';
 
-const classNameFunc = ({ isActive }) => (isActive ? "active" : "");
-
 function Header() {
+
+    const style = { color: "white", fontSize: "2em" }
 
     return (<>
 
-        <nav className="navbar navbar-expand-lg bg-dark sticky-top">
+        <nav className="navbar sticky-top">
             <div className="container-fluid" >
                 <Link className="navbar-brand">LH
                     <GrReactjs />
@@ -20,30 +20,29 @@ function Header() {
                 <ul>
                     <li>
                         <NavLink to="/Portfolio/"
-                            className={(navData) => (navData.isActive ? "active" : 'none')}>
-                            <GoHome size="20px" />
+                            className={(navData) => (navData.isActive ? "active" : '')}>
+                            <GoHome style={style} />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
                             to="/Portfolio/skills">
-                            <GiSkills size='20px' />
+                            <GiSkills style={style} />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/Portfolio/projects">
-                            <GoProject size="20px" />
+                            <GoProject style={style} />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/Portfolio/aboutMe">
-                            <FaAddressCard size="20px" />
-                            {/* <ImEnvelop size="20px" /> */}
+                            <FaAddressCard style={style} />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/Portfolio/contactMe">
-                            <ImEnvelop size="20px" />
+                            <ImEnvelop style={style} />
                         </NavLink>
                     </li>
                 </ul>
