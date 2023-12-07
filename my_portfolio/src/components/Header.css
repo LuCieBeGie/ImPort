@@ -44,15 +44,8 @@ img {
 .wrapper {
     width: 100%;
     height: fit-content;
-    padding: 0.5%;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.tool_tip {
-    border: none;
-    background-color: transparent;
-    color: yellow;
 }

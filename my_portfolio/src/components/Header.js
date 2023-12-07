@@ -1,5 +1,4 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
-import { GrReactjs, GrTooltip } from 'react-icons/gr'
 import { FaAddressCard } from 'react-icons/fa'
 import { GoHome, GoProject } from 'react-icons/go'
 import { GiSkills } from 'react-icons/gi'
@@ -27,8 +26,7 @@ function Header() {
                     <Tooltip className="menu_nav_button"
                         title={<h2
                             style={{ color: "lightblue" }}>Home</h2>}>
-                        <NavLink to="/Portfolio"
-                            className={(navData) => (navData.isActive ? "active" : '')}>
+                        <NavLink to="/Portfolio/">
                             <GoHome style={style} className="nav_link" />
                         </NavLink>
                     </Tooltip>

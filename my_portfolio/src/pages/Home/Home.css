@@ -10,11 +10,10 @@
 
 .container {
     background: url('../../assets/images/background.jpg') center center no-repeat;
+    background-attachment: fixed;
     max-width: 95%;
-    /* width: 100%; */
     min-height: 100vmin;
     background-size: cover;
-    /* position: absolute; */
     background-repeat: no-repeat;
     padding: 5%;
     display: flex;
