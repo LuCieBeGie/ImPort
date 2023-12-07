@@ -13,7 +13,7 @@ function Router() {
             <Header />
             <Routes>
                 <Route>
-                    <Route path='/Portfolio/' element={<Home />} />
+                    <Route path='/Portfolio' element={<Home />} />
                     <Route path='/Portfolio/aboutMe' element={<AboutMe />} />
                     <Route path='/Portfolio/projects' element={<Projects />} />
                     <Route path='/Portfolio/skills' element={<Skills />} />
