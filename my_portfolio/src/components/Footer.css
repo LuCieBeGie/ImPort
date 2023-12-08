@@ -3,12 +3,8 @@
     padding: 2%;
     top: 0;
     z-index: 100;
-    margin-top: 2%;
-    margin-bottom: 0;
     height: 15%;
     background-color: rgb(43, 37, 44);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 }
 
 .container_footer {
@@ -16,11 +12,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 nav ul {
-    /* margin-top: 2%; */
+    padding: 0%;
+    margin: 2% 0 0 0;
     width: 50%;
     text-shadow: rgb(62, 62, 62) 1px 0 10px;
     list-style: none;
@@ -31,11 +27,11 @@ nav ul {
 }
 
 .footer_navbar_brand {
-    width: 100%;
+    margin-top: 2%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 90%;
 }
 
 .footer_navbar_brand h3 {

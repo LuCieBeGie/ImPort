@@ -11,12 +11,17 @@ function Router() {
     return (<>
         <BrowserRouter>
             <Header />
+            <Home />
+            <Skills />
+            <Projects />
+            <AboutMe />
+            <ContactMe />
             <Routes>
                 <Route>
                     <Route path='/Portfolio/' element={<Home />} />
-                    <Route path='/Portfolio/aboutMe' element={<AboutMe />} />
-                    <Route path='/Portfolio/projects' element={<Projects />} />
                     <Route path='/Portfolio/skills' element={<Skills />} />
+                    <Route path='/Portfolio/projects' element={<Projects />} />
+                    <Route path='/Portfolio/aboutMe' element={<AboutMe />} />
                     <Route path='/Portfolio/contactMe' element={<ContactMe />} />
                 </Route>
             </Routes>

@@ -25,9 +25,11 @@ function ContactMe() {
         from: { opacity: 0, transform: 'translateX(250px)' }
     })
     const style = {
+        // margin: 'auto',
+        maxWidth: '95%',
         position: 'relative',
         padding: '10px',
-        width: '100%',
+        // width: '100%',
         minHeight: '700px',
         display: 'flex',
         alignItems: 'center',
@@ -56,11 +58,13 @@ function ContactMe() {
     console.log(odds);
     return (
         <>
+            <h1>
+                contact me
+            </h1>
             <figure style={style}>
                 {
                     odds.map((proj, pId) => {
                         return <div className="shownSkill" alt={proj.title} key={pId}>
-                            <hr />
                             <animated.div style={{ ...imgStyle1, ...genStyles, ...imgSpringProps }}>
                                 <img src={process.env.PUBLIC_URL + proj.image} alt={proj.title} />
                             </animated.div>

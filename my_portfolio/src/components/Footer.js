@@ -46,14 +46,14 @@ function Footer() {
                         </NavLink>
                     </li>
                 </ul>
-                <h3 style={style}>© {(new Date().getFullYear())} </h3>
                 <div className="footer_navbar_brand">
-                    <img src={logo} />
+                    {/* <img src={logo} /> */}
                     <NavLink to="https://www.linkedin.com/in/lusHar"
                         rel="noopener noreferrer"
                         target='_blank'>
                         <TbBrandLinkedin style={style} className="active" />
                     </NavLink>
+                    <h3 style={style}>© {(new Date().getFullYear())} </h3>
                 </div>
             </div>
         </nav >
