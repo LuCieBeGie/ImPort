@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser';
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useSpring, animated } from "react-spring";
 import image from '../../assets/images/about_me.png'
 import './AboutMe.css'
@@ -58,7 +58,7 @@ function AboutMe() {
         color: 'white',
         margin: '2%',
     }
-    
+
     const textStyle1 = {
         top: '0',
         right: '0',

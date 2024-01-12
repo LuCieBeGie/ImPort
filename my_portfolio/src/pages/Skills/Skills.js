@@ -27,7 +27,7 @@ function Skills() {
                 {
                     isVisible && myTechnicalSkills.map((skill, skillId) => {
                         return <div className="shownSkill" alt={skill.title} key={skillId}>
-                            <hr />
+                            {/* <hr /> */}
                             <span><img src={process.env.PUBLIC_URL + skill.image} alt={skill.title} /></span>
                             <span>{skill.title}</span>
                         </div>

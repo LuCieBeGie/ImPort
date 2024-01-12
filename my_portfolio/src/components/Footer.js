@@ -4,8 +4,6 @@ import { GoHome, GoProject } from 'react-icons/go'
 import { GiSkills } from 'react-icons/gi'
 import { ImEnvelop } from 'react-icons/im'
 import { TbBrandLinkedin } from "react-icons/tb";
-import Tooltip from '@mui/material/Tooltip';
-import logo from '../assets/images/LOGO.png'
 
 import './Footer.css';
 

@@ -8,6 +8,7 @@ import logo from '../assets/images/LOGO.png'
 
 import './Header.css';
 import { Toolbar } from "@mui/material";
+import Pages from "../pages";
 
 function Header() {
 
@@ -26,7 +27,7 @@ function Header() {
                     <Tooltip className="menu_nav_button"
                         title={<h2
                             style={{ color: "lightblue" }}>Home</h2>}>
-                        <NavLink to="/Portfolio/">
+                        <NavLink to="/Portfolio/"  >
                             <GoHome style={style} className="nav_link" />
                         </NavLink>
                     </Tooltip>
@@ -34,28 +35,29 @@ function Header() {
                         title={<h2
                             style={{ color: "lightblue" }}>Skills</h2>}>
                         <NavLink
-                            to="/Portfolio/skills">
+                            to="/Portfolio/skills"
+                        >
                             <GiSkills style={style} />
                         </NavLink>
                     </Tooltip>
                     <Tooltip className="menu_nav_button"
                         title={<h2
                             style={{ color: "lightblue" }}>Projects</h2>}>
-                        <NavLink to="/Portfolio/projects">
+                        <NavLink to="/Portfolio/projects"  >
                             <GoProject style={style} />
                         </NavLink>
                     </Tooltip>
                     <Tooltip className="menu_nav_button"
                         title={<h2
                             style={{ color: "lightblue" }}>About Me</h2>}>
-                        <NavLink to="/Portfolio/aboutMe">
+                        <NavLink to="/Portfolio/aboutMe"  >
                             <FaAddressCard style={style} />
                         </NavLink>
                     </Tooltip>
                     <Tooltip className="menu_nav_button"
                         title={<h2
                             style={{ color: "lightblue" }}>Contact Me</h2>}>
-                        <NavLink to="/Portfolio/contactMe">
+                        <NavLink to="/Portfolio/contactMe"  >
                             <ImEnvelop style={style} />
                         </NavLink>
                     </Tooltip>
