@@ -16,7 +16,7 @@ function Pages() {
             <Projects />
             <AboutMe />
             <ContactMe />
-            <Footer/>
+            <Footer />
         </div>
         <Outlet />
     </>)

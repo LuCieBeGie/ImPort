@@ -55,7 +55,6 @@ function ContactMe() {
         boxShadow: '2px 2px 15px -5px rgb(255, 255, 255)',
     }
 
-    console.log(odds);
     return (
         <>
             <h1>

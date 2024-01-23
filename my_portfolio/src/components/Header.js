@@ -1,4 +1,8 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
+// import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link as LinkScroll } from 'react-scroll/modules'
+import React, { useEffect } from "react"
+
 import { FaAddressCard } from 'react-icons/fa'
 import { GoHome, GoProject } from 'react-icons/go'
 import { GiSkills } from 'react-icons/gi'
@@ -27,44 +31,47 @@ function Header() {
                     <Tooltip className="menu_nav_button"
                         title={<h2
                             style={{ color: "lightblue" }}>Home</h2>}>
-                        <NavLink to="/Portfolio/"  >
+                        <Link to="/Portfolio/"  >
                             <GoHome style={style} className="nav_link" />
-                        </NavLink>
+                        </Link>
                     </Tooltip>
-                    <Tooltip className="menu_nav_button"
-                        title={<h2
-                            style={{ color: "lightblue" }}>Skills</h2>}>
-                        <NavLink
-                            to="/Portfolio/skills"
-                        >
-                            <GiSkills style={style} />
-                        </NavLink>
-                    </Tooltip>
-                    <Tooltip className="menu_nav_button"
-                        title={<h2
-                            style={{ color: "lightblue" }}>Projects</h2>}>
-                        <NavLink to="/Portfolio/projects"  >
-                            <GoProject style={style} />
-                        </NavLink>
-                    </Tooltip>
+                    <LinkScroll
+                        activeClass='active'
+                        to='skills'
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        Skills
+                    </LinkScroll>
+                    <LinkScroll
+                        activeClass='active'
+                        to='projects'
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}>
+                        Projects
+                    </LinkScroll>
                     <Tooltip className="menu_nav_button"
                         title={<h2
                             style={{ color: "lightblue" }}>About Me</h2>}>
-                        <NavLink to="/Portfolio/aboutMe"  >
+                        <Link to="/Portfolio/aboutMe"  >
                             <FaAddressCard style={style} />
-                        </NavLink>
+                        </Link>
                     </Tooltip>
                     <Tooltip className="menu_nav_button"
                         title={<h2
                             style={{ color: "lightblue" }}>Contact Me</h2>}>
-                        <NavLink to="/Portfolio/contactMe"  >
+                        <Link to="/Portfolio/contactMe"  >
                             <ImEnvelop style={style} />
-                        </NavLink>
+                        </Link>
                     </Tooltip>
                 </Toolbar>
             </div>
         </nav>
-        <Outlet />
+        {/* <Outlet /> */}
     </>)
 }
 export default Header

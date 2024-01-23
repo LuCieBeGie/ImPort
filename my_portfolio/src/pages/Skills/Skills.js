@@ -1,6 +1,8 @@
+import React from 'react'
 import { useDispatch, useSelector } from "react-redux"
 import './Skills.css'
 import { useState } from "react";
+import { Element } from "react-scroll";
 
 function Skills() {
     const dispatch = useDispatch()
@@ -9,7 +11,7 @@ function Skills() {
     const [isVisible, toggleVisibility] = useState(false);
     const [isVisibleSoftSkills, toggleVisibilitySoftSkills] = useState(false);
     return (<>
-        <div className="background">
+        <Element className="background" id="skills">
             <div className="button-container">
                 <button
                     onClick={() => {
@@ -39,7 +41,7 @@ function Skills() {
                     return <h1 key={sSkillId}> {sSkill.name}</h1>
                 })
             }
-        </div>
+        </Element>
     </>)
 }
 

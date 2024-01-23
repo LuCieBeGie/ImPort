@@ -1,11 +1,12 @@
 import { useDispatch, useSelector } from "react-redux"
 import './Projects.css';
+import { Element } from "react-scroll";
 
 function Projects() {
     const dispatch = useDispatch()
     const { myProjects } = useSelector(state => state.projects)
     return (<>
-        <div className="project_background">
+        <Element id="projects" className="project_background">
             <h1>My Projects</h1>
             <figure className="">
                 {myProjects.map((project, projectId) => {
@@ -24,7 +25,7 @@ function Projects() {
                     </div>
                 })}
             </figure>
-        </div>
+        </Element>
     </>)
 }
 
