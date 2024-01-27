@@ -1,9 +1,10 @@
+import { Element } from 'react-scroll'
 import './Home.css'
 
 function Home() {
 
     return (<>
-        <section className="container">
+        <Element className="container" id='home'>
             <div className="triangle">
                 <div>
                     <h1>Hi, I'm Lusine,
@@ -16,7 +17,7 @@ function Home() {
                     </button>
                 </div>
             </div>
-        </section>
+        </Element>
     </>)
 }
 

@@ -36,6 +36,16 @@ function Header() {
                         </Link>
                     </Tooltip>
                     <LinkScroll
+                        activeClass='home'
+                        to='skills'
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                    >
+                        Home
+                    </LinkScroll>
+                    <LinkScroll
                         activeClass='active'
                         to='skills'
                         spy={true}
