@@ -19,7 +19,7 @@ function Header() {
     const scroller = Scroll.scroller;
 
     const goToPageAndScroll = async (selector) => {
-        await navigate("/Portfolio");
+        await navigate("/Portfolio/");
         await scroller.scrollTo(selector, {
             smooth: true,
             spy: true,
@@ -37,64 +37,89 @@ function Header() {
                         <img src={logo} />
                     </Link>
                 </Tooltip>
-                {location !== "/Portfolio/aboutMe" ? (
-                    <>
-                        {" "}
-                        <LinkScroll
-                            to="home"
-                            activeClass='active'
-                            spy={true}
-                            smooth={true}
-                            offset={-75}
-                            duration={500}
-                        >
-                            Home
-                        </LinkScroll>
-                        <LinkScroll
-                            to="skills"
-                            activeClass='active'
-                            spy={true}
-                            smooth={true}
-                            offset={-75}
-                            duration={500}
-                        >
-                            Skills
-                        </LinkScroll>
-                        <LinkScroll
-                            to="projects"
-                            activeClass='active'
-                            spy={true}
-                            smooth={true}
-                            offset={-75}
-                            duration={500}
-                        >
-                            Projects
-                        </LinkScroll>
-                        <LinkScroll
-                            to="aboutMe"
-                            activeClass='active'
-                            spy={true}
-                            smooth={true}
-                            offset={-75}
-                            duration={500}
-                        >
-                            About Me
-                        </LinkScroll>
-                        <NavLink to="/Portfolio/contactMe">
-                            Contact Me
-                        </NavLink>
-                    </>
-                ) : (
-                    <>
-                        {" "}
-                        <button onClick={() => goToPageAndScroll("home")}
-                        >Home</button>
-                        <button onClick={() => goToPageAndScroll("skills")}>Skills</button>
-                        <button onClick={() => goToPageAndScroll("projects")}>Projects</button>
-                        <button onClick={() => goToPageAndScroll("aboutMe")}>About Me</button>
-                        <NavLink to="/Portfolio/contactMe">Contact Me</NavLink>
-                    </>
-                )}
+                <ul>
+
+                    {location !== "/Portfolio/contactMe" ? (
+                        <>
+                            <li>
+                                {" "}
+                                <LinkScroll
+                                    to="home"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-75}
+                                    duration={500}
+                                >
+                                    Home
+                                </LinkScroll>
+                            </li>
+                            <li>
+
+                                <LinkScroll
+                                    to="skills"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={500}
+                                >
+                                    Skills
+                                </LinkScroll>
+                            </li>
+                            <li>
+
+                                <LinkScroll
+                                    to="projects"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={500}
+                                >
+                                    Projects
+                                </LinkScroll>
+                            </li>
+                            <li>
+                                <LinkScroll
+                                    to="aboutMe"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={500}
+                                >
+                                    About Me
+                                </LinkScroll>
+                            </li>
+                            <li>
+
+                                <NavLink
+                                    to="/Portfolio/contactMe"
+                                >
+                                    Contact Me
+                                </NavLink>
+                            </li>
+                        </>
+                    ) : (
+                        <>
+                            <li>
+                                {" "}
+                                <button onClick={() => goToPageAndScroll("home")}
+                                >Home</button>
+                            </li>
+                            <li>
+                                <button onClick={() => goToPageAndScroll("skills")}>Skills</button>
+                            </li>
+                            <li>
+                                <button onClick={() => goToPageAndScroll("projects")}>Projects</button>
+                            </li>
+                            <li>
+
+                                <button onClick={() => goToPageAndScroll("aboutMe")}>About Me</button>
+                            </li>
+                            <li>
+                                <NavLink to="/Portfolio/contactMe">Contact Me</NavLink>
+                            </li>
+                        </>
+                    )}
+                </ul>
             </div>
         </nav>
         <Outlet />

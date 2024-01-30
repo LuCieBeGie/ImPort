@@ -14,13 +14,20 @@
     justify-content: center;
 }
 
-nav ul {
+a {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.container_footer ul {
     padding: 0%;
     margin: 2% 0 0 0;
-    width: 50%;
+    list-style: none;
     text-shadow: rgb(62, 62, 62) 1px 0 10px;
     list-style: none;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 3em;
@@ -38,8 +45,13 @@ nav ul {
     text-decoration: none;
 }
 
-.active {
-    color: #ff9393;
-    filter: drop-shadow(0 0 0.75rem rgb(220, 20, 160));
-    font-size: 1.5em;
+.icon {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+a:hover,
+.icon:hover {
+    color: black
 }

@@ -1,35 +1,54 @@
 .sticky-top {
     position: sticky;
-    height: 15%;
     background-color: rgb(43, 37, 44);
     top: 0;
     z-index: 1020;
-    /* margin-bottom: 3%; */
-    /* border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; */
+}
+
+.container-fluid {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    /* min-height: 20%; */
+    min-height: 55px;
 }
 
 img {
     width: 20px;
 }
 
-a {
+.container-fluid ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.container-fluid ul li {
+    width: 10%;
+}
+
+.container-fluid a,
+button {
+    text-decoration: none;
     cursor: pointer;
     margin-left: 3%;
     font-size: 1.5em;
-    color: #ff9393;
-    text-shadow: #9c9999 1px 0 8px;
-    ;
+    color: #ffebeb;
+    text-shadow: #f8f8f8 0.5px 0 8px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+
 }
 
-.container-fluid {
-    width: 100%;
-    display: flex;
-    align-items: center;
+a:hover,
+button:hover {
+    color: black
 }
 
 .navbar-brand {
@@ -37,24 +56,9 @@ a {
     width: 5%;
 }
 
-.menu_nav_button {
-    margin-left: 5%;
-    border: none;
-    background-color: transparent;
-    color: yellow;
-}
-
 .active {
-    color: #ff9393;
-    filter: drop-shadow(0 0 0.75rem rgb(220, 20, 160));
-    font-size: 1.5em;
-}
-
-.wrapper {
-    width: 100%;
-    height: fit-content;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #ffb2b2;
+    text-shadow: none;
+    filter: drop-shadow(0 0 0.75rem rgb(144, 66, 119));
+    font-size: 1.8em;
 }
