@@ -17,6 +17,15 @@ img {
     width: 20px;
 }
 
+a {
+    cursor: pointer;
+    margin-left: 3%;
+    font-size: 1.5em;
+    color: #ff9393;
+    text-shadow: #9c9999 1px 0 8px;
+    ;
+}
+
 .container-fluid {
     width: 100%;
     display: flex;

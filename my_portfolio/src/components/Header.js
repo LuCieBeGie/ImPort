@@ -1,7 +1,8 @@
-import { Link, NavLink, Outlet } from "react-router-dom";
-// import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { Link as LinkScroll } from 'react-scroll/modules'
 import React, { useEffect } from "react"
+import * as Scroll from "react-scroll";
+import './Header.css';
 
 import { FaAddressCard } from 'react-icons/fa'
 import { GoHome, GoProject } from 'react-icons/go'
@@ -9,14 +10,23 @@ import { GiSkills } from 'react-icons/gi'
 import { ImEnvelop } from 'react-icons/im'
 import Tooltip from '@mui/material/Tooltip';
 import logo from '../assets/images/LOGO.png'
-
-import './Header.css';
 import { Toolbar } from "@mui/material";
-import Pages from "../pages";
 
 function Header() {
+    const path = useLocation().pathname;
+    const location = path;
+    const navigate = useNavigate();
+    const scroller = Scroll.scroller;
 
-    const style = { color: "white", fontSize: "2em" }
+    const goToPageAndScroll = async (selector) => {
+        await navigate("/Portfolio");
+        await scroller.scrollTo(selector, {
+            smooth: true,
+            spy: true,
+            duration: 500,
+            offset: -75,
+        });
+    };
 
     return (<>
 
@@ -27,61 +37,67 @@ function Header() {
                         <img src={logo} />
                     </Link>
                 </Tooltip>
-                <Toolbar className="wrapper">
-                    <Tooltip className="menu_nav_button"
-                        title={<h2
-                            style={{ color: "lightblue" }}>Home</h2>}>
-                        <Link to="/Portfolio/"  >
-                            <GoHome style={style} className="nav_link" />
-                        </Link>
-                    </Tooltip>
-                    <LinkScroll
-                        activeClass='home'
-                        to='skills'
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        Home
-                    </LinkScroll>
-                    <LinkScroll
-                        activeClass='active'
-                        to='skills'
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}
-                    >
-                        Skills
-                    </LinkScroll>
-                    <LinkScroll
-                        activeClass='active'
-                        to='projects'
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={500}>
-                        Projects
-                    </LinkScroll>
-                    <Tooltip className="menu_nav_button"
-                        title={<h2
-                            style={{ color: "lightblue" }}>About Me</h2>}>
-                        <Link to="/Portfolio/aboutMe"  >
-                            <FaAddressCard style={style} />
-                        </Link>
-                    </Tooltip>
-                    <Tooltip className="menu_nav_button"
-                        title={<h2
-                            style={{ color: "lightblue" }}>Contact Me</h2>}>
-                        <Link to="/Portfolio/contactMe"  >
-                            <ImEnvelop style={style} />
-                        </Link>
-                    </Tooltip>
-                </Toolbar>
+                {location !== "/Portfolio/aboutMe" ? (
+                    <>
+                        {" "}
+                        <LinkScroll
+                            to="home"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={-75}
+                            duration={500}
+                        >
+                            Home
+                        </LinkScroll>
+                        <LinkScroll
+                            to="skills"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={-75}
+                            duration={500}
+                        >
+                            Skills
+                        </LinkScroll>
+                        <LinkScroll
+                            to="projects"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={-75}
+                            duration={500}
+                        >
+                            Projects
+                        </LinkScroll>
+                        <LinkScroll
+                            to="aboutMe"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={-75}
+                            duration={500}
+                        >
+                            About Me
+                        </LinkScroll>
+                        <NavLink to="/Portfolio/contactMe">
+                            Contact Me
+                        </NavLink>
+                    </>
+                ) : (
+                    <>
+                        {" "}
+                        <button onClick={() => goToPageAndScroll("home")}
+                        >Home</button>
+                        <button onClick={() => goToPageAndScroll("skills")}>Skills</button>
+                        <button onClick={() => goToPageAndScroll("projects")}>Projects</button>
+                        <button onClick={() => goToPageAndScroll("aboutMe")}>About Me</button>
+                        <NavLink to="/Portfolio/contactMe">Contact Me</NavLink>
+                    </>
+                )}
             </div>
         </nav>
-        {/* <Outlet /> */}
+        <Outlet />
     </>)
 }
 export default Header

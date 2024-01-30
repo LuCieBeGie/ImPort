@@ -11,7 +11,7 @@ function Skills() {
     const [isVisible, toggleVisibility] = useState(false);
     const [isVisibleSoftSkills, toggleVisibilitySoftSkills] = useState(false);
     return (<>
-        <Element className="background" id="skills">
+        <Element className="background skills" id="skills" name='skills'>
             <div className="button-container">
                 <button
                     onClick={() => {

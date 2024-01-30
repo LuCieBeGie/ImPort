@@ -6,7 +6,10 @@ function Projects() {
     const dispatch = useDispatch()
     const { myProjects } = useSelector(state => state.projects)
     return (<>
-        <Element id="projects" className="project_background">
+        <Element
+            id="projects"
+            className="project_background projects"
+            name="projects">
             <h1>My Projects</h1>
             <figure className="">
                 {myProjects.map((project, projectId) => {

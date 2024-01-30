@@ -4,7 +4,7 @@ import './Home.css'
 function Home() {
 
     return (<>
-        <Element className="container" id='home'>
+        <div className="container home" id='home' name="home">
             <div className="triangle">
                 <div>
                     <h1>Hi, I'm Lusine,
@@ -17,7 +17,7 @@ function Home() {
                     </button>
                 </div>
             </div>
-        </Element>
+        </div>
     </>)
 }
 
