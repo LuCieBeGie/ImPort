@@ -36,7 +36,8 @@ function Footer() {
                         <>
                             {" "}
                             <li>
-                                <LinkScroll to="home"
+                                <LinkScroll
+                                    to="home"
                                     spy={true}
                                     smooth={true}
                                     offset={-75}
@@ -109,7 +110,7 @@ function Footer() {
                             </li>
                             <li>
                                 <NavLink to="/Portfolio/contactMe">
-                                    <ImEnvelop className='icon active'
+                                    <ImEnvelop className='icon'
                                     />
                                 </NavLink>
                             </li>

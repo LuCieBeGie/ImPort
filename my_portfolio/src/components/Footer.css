@@ -14,7 +14,7 @@
     justify-content: center;
 }
 
-a {
+.container_footer a {
     color: white;
     font-size: 2em;
     cursor: pointer;
@@ -53,5 +53,8 @@ a {
 
 a:hover,
 .icon:hover {
-    color: black
+    color: black;
+
 }
+
+

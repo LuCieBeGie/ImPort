@@ -37,9 +37,9 @@ button {
     text-decoration: none;
     cursor: pointer;
     margin-left: 3%;
-    font-size: 1.5em;
-    color: #ffebeb;
-    text-shadow: #f8f8f8 0.5px 0 8px;
+    font-size: 1.6em;
+    color: white;
+    /* text-shadow: #f8f8f8 0.5px 0 8px; */
     border: none;
     background-color: transparent;
     outline: none;
@@ -57,8 +57,6 @@ button:hover {
 }
 
 .active {
-    color: #ffb2b2;
-    text-shadow: none;
-    filter: drop-shadow(0 0 0.75rem rgb(144, 66, 119));
-    font-size: 1.8em;
+    text-shadow: #f8f8f8 0.5px 0 8px;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 113, 210));
 }
