@@ -101,8 +101,8 @@ function Header() {
                         <>
                             <li>
                                 {" "}
-                                <button onClick={() => goToPageAndScroll("home")}
-                                >Home</button>
+                                <button onClick={() => goToPageAndScroll
+                                    ("home")}>Home</button>
                             </li>
                             <li>
                                 <button onClick={() => goToPageAndScroll("skills")}>Skills</button>

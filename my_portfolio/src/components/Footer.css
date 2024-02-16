@@ -14,7 +14,8 @@
     justify-content: center;
 }
 
-.container_footer a {
+.container_footer a,
+.icon {
     color: white;
     font-size: 2em;
     cursor: pointer;
@@ -45,16 +46,7 @@
     text-decoration: none;
 }
 
-.icon {
-    color: white;
-    font-size: 2em;
-    cursor: pointer;
-}
-
 a:hover,
 .icon:hover {
     color: black;
-
 }
-
-

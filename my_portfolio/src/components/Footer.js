@@ -41,8 +41,7 @@ function Footer() {
                                     spy={true}
                                     smooth={true}
                                     offset={-75}
-                                    duration={500}
-                                >
+                                    duration={500}                                >
                                     <GoHome />
                                 </LinkScroll>
                             </li>
@@ -80,7 +79,7 @@ function Footer() {
                                 </LinkScroll>
                             </li>
                             <li>
-                                <NavLink to="/Portfolio/contactMe">
+                                <NavLink to="/Portfolio/contactMe" >
                                     <ImEnvelop />
                                 </NavLink>
                             </li>
@@ -109,9 +108,8 @@ function Footer() {
                                 />
                             </li>
                             <li>
-                                <NavLink to="/Portfolio/contactMe">
-                                    <ImEnvelop className='icon'
-                                    />
+                                <NavLink to="/Portfolio/contactMe" className='icon'>
+                                    <ImEnvelop />
                                 </NavLink>
                             </li>
                         </>

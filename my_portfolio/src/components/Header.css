@@ -39,11 +39,9 @@ button {
     margin-left: 3%;
     font-size: 1.6em;
     color: white;
-    /* text-shadow: #f8f8f8 0.5px 0 8px; */
     border: none;
     background-color: transparent;
     outline: none;
-
 }
 
 a:hover,

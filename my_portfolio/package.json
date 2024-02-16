@@ -29,6 +29,7 @@
     "redux-thunk": "^2.4.2",
     "saga": "^4.0.0-alpha",
     "styled-components": "^6.1.1",
+    "sweetalert2": "^11.10.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

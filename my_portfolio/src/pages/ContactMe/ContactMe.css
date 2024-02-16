@@ -1,5 +1,4 @@
 .form {
-    background-color: rgb(103, 103, 103, 0.7);
     width: 50%;
     min-height: 300px;
     display: flex;
@@ -9,4 +8,71 @@
     margin: 5% auto;
     margin-right: 0;
     border-radius: 15px;
+    padding: 4vw;
+    min-height: 60vh;
+    /* font-size: 1em; */
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), 0 0 25px rgba(176, 176, 254, 0.3),
+        0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.contactHeader {
+    float: inline-start;
+}
+
+label {
+    width: 65%;
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type='name'],
+input[type='email'],
+textarea {
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent !important;
+    ;
+}
+
+textarea::placeholder {
+    color: black;
+}
+
+.inputName {
+    position: absolute;
+    font-size: 1.5em;
+    top: 0;
+    left: 0;
+    transform: translateY(30px);
+    transition-duration: 300ms;
+}
+
+button[type='submit'] {
+    padding: 15px 25px;
+    margin-top: 20px;
+    background: rgb(173, 160, 175);
+    color: #580062;
+    cursor: pointer;
+    border-radius: 20px;
+    border:none;
+    width: 65%;
+}
+
+button[type='submit']:hover {
+    color: #847c85;
+    background-color: #580062;
+}
+
+label:focus-within>.inputName,
+input:not(:placeholder-shown)+.inputName {
+    color: rgb(255, 255, 255);
+    transform: translateY(0px);
+}
+
+input::placeholder {
+    opacity: 0;
 }
