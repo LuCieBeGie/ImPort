@@ -1,18 +1,14 @@
+import React, { useState } from "react"
 import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { Link as LinkScroll } from 'react-scroll/modules'
-import React, { useEffect } from "react"
 import * as Scroll from "react-scroll";
 import './Header.css';
 
-import { FaAddressCard } from 'react-icons/fa'
-import { GoHome, GoProject } from 'react-icons/go'
-import { GiSkills } from 'react-icons/gi'
-import { ImEnvelop } from 'react-icons/im'
 import Tooltip from '@mui/material/Tooltip';
 import logo from '../assets/images/LOGO.png'
-import { Toolbar } from "@mui/material";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-function Header() {
+function Header({ toggle }) {
     const path = useLocation().pathname;
     const location = path;
     const navigate = useNavigate();
@@ -32,13 +28,16 @@ function Header() {
 
         <nav className="navbar sticky-top">
             <div className="container-fluid" >
-                <Tooltip>
+                <Tooltip className="logo">
                     <Link className="navbar-brand">
                         <img src={logo} />
                     </Link>
                 </Tooltip>
-                <ul>
+                <button onClick={toggle} className="mobileMenuContainer">
+                    <GiHamburgerMenu />
+                </button>
 
+                <ul className="menuWrapper">
                     {location !== "/Portfolio/contactMe" ? (
                         <>
                             <li>
@@ -85,15 +84,14 @@ function Header() {
                                     offset={-50}
                                     duration={500}
                                 >
-                                    About Me
+                                    About
                                 </LinkScroll>
                             </li>
                             <li>
-
                                 <NavLink
                                     to="/Portfolio/contactMe"
                                 >
-                                    Contact Me
+                                    Contact
                                 </NavLink>
                             </li>
                         </>
@@ -112,10 +110,10 @@ function Header() {
                             </li>
                             <li>
 
-                                <button onClick={() => goToPageAndScroll("aboutMe")}>About Me</button>
+                                <button onClick={() => goToPageAndScroll("aboutMe")}>About</button>
                             </li>
                             <li>
-                                <NavLink to="/Portfolio/contactMe">Contact Me</NavLink>
+                                <NavLink to="/Portfolio/contactMe">Contact</NavLink>
                             </li>
                         </>
                     )}

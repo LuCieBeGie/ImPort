@@ -3,6 +3,9 @@
     background-color: rgb(43, 37, 44);
     top: 0;
     z-index: 1020;
+    min-height: 55px;
+    margin: auto;
+    display: flex;
 }
 
 .container-fluid {
@@ -11,15 +14,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* min-height: 20%; */
-    min-height: 55px;
+    /* height: 20%; */
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    left: 0;
 }
 
 img {
     width: 20px;
 }
 
-.container-fluid ul {
+.menuWrapper {
     width: 100%;
     list-style: none;
     display: flex;
@@ -28,7 +37,7 @@ img {
     gap: 3em;
 }
 
-.container-fluid ul li {
+.menuWrapper li {
     width: 10%;
 }
 
@@ -36,7 +45,7 @@ img {
 button {
     text-decoration: none;
     cursor: pointer;
-    margin-left: 3%;
+    margin-left: 2%;
     font-size: 1.6em;
     color: white;
     border: none;
@@ -57,4 +66,24 @@ button:hover {
 .active {
     text-shadow: #f8f8f8 0.5px 0 8px;
     filter: drop-shadow(0 0 0.75rem rgb(255, 113, 210));
+}
+
+.mobileMenuContainer {
+    display: none;
+}
+
+@media (max-width: 495px) {
+    .menuWrapper {
+        display: none;
+    }
+
+    .mobileMenuContainer {
+        display: flex;
+        position: absolute;
+        align-self: center;
+        right: 0;
+        font-size: 2em;
+        color: #ffffff;
+        margin-right: 2%;
+    }
 }
