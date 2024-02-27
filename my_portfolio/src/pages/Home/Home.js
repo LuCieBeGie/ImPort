@@ -6,17 +6,8 @@ import Header from '../../components/Header'
 
 function Home() {
 
-    const [isOpen, setIsOpen] = useState(false)
-
-    const toggle = () => {
-        setIsOpen(!isOpen)
-        console.log('ok');
-        // console.log(isOpen);
-    }
-
     return (<>
-        <Navigation isOpen={isOpen} toggle={toggle} />
-        <Header toggle={toggle} />
+
         <div className="container home" id='home' name="home">
             <div className="triangle">
                 <div>

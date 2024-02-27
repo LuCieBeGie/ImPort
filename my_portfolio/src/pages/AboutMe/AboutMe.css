@@ -1,44 +1,39 @@
-/* .main_container {
-    padding: 10px;
-    width: 100%;
-    min-height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 15px -5px rgb(255, 255, 255);
-    flex-wrap: wrap;
-    position: 'relative',
-} */
-
 hr {
     border-top: 5px solid;
     width: 15%;
     margin: 0 0 5% 0;
 }
 
+.about {
+    position: relative;
+    min-height: 100vh;
+}
+
 .about_me {
-    width: 40%;
-    height: 100%;
-    margin: 5%;
+    width: 50%;
+    height: 45%;
+    inset: 0;
+    margin: auto;
     border-radius: 10px;
     padding: 2%;
     transform: rotate(15deg) !important;
     box-shadow: 2px 2px 15px -5px rgb(255, 255, 255);
     overflow: hidden;
+    position: absolute;
 }
 
 .about_me::before {
-    position: absolute;
     content: '';
-    display: inline-block;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 15px -5px rgb(255, 255, 255);
-    border-radius: 10px;
+    position: absolute;
     top: 0;
     left: 0;
     transform: rotate(-7deg);
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 15px -5px rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
 .styleImg {
@@ -47,4 +42,27 @@ hr {
     width: 100%;
     height: 100%;
     transform: rotate(-7deg);
+}
+
+.bckImg {
+    background: url('../../assets/images/about_me.png') no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.selfImg {
+    width: 50%;
+    height: 250px;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 8% 7% 7% 0;
+}
+
+.main_container p{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    line-height: 25px
 }

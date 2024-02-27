@@ -91,7 +91,7 @@ function Header({ toggle }) {
                                 <NavLink
                                     to="/Portfolio/contactMe"
                                 >
-                                    Contact
+                                    Contact Me
                                 </NavLink>
                             </li>
                         </>
@@ -113,7 +113,7 @@ function Header({ toggle }) {
                                 <button onClick={() => goToPageAndScroll("aboutMe")}>About</button>
                             </li>
                             <li>
-                                <NavLink to="/Portfolio/contactMe">Contact</NavLink>
+                                <NavLink to="/Portfolio/contactMe">Contact Me</NavLink>
                             </li>
                         </>
                     )}

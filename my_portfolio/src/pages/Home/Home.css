@@ -60,9 +60,9 @@
     border-radius: 10px;
     background-color: rgb(2, 19, 54);
     color: #ffffff;
-    /* text-shadow: rgb(62, 62, 62) 1px 0 10px;
-    box-shadow: 2px 2px 15px -5px rgb(162, 162, 162); */
     animation: anim-lineUp 15s forwards, shine 5s infinite;
+    transition: all 0.5s linear;
+
 }
 
 .download:hover {
@@ -70,9 +70,9 @@
     position: relative;
     z-index: 2;
     pointer-events: auto;
-    background-color: rgb(230, 243, 255);
+    background-color: rgb(66, 94, 121);
     color: rgb(2, 19, 54);
-    text-shadow: rgb(218, 218, 218) 1px 0 10px;
+    text-shadow: rgb(54, 52, 52) 1px 0 10px;
 }
 
 .download a {
@@ -107,9 +107,9 @@
     }
 
     100% {
-        color: #ffe6ff;
-        text-shadow: 0 0 0.6rem #e6f3ff, 0 0 1.5rem #1b64b8,
+        color: #140c3a;
+        text-shadow: 0 0 0.6rem #77bdff, 0 0 1.5rem #1b64b8,
             -0.2rem 0.1rem 1rem #b7c7ff, 0.2rem 0.1rem 1rem #55659e,
-            0 -0.5rem 2rem #ffffff, 0 0.5rem 3rem #62699c;
+            0 -0.5rem 2rem #848484, 0 0.5rem 3rem #62699c;
     }
 }

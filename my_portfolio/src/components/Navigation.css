@@ -1,5 +1,4 @@
 * {
-    margin: 0;
     padding: 0;
 }
 
@@ -41,18 +40,25 @@
     gap: 3em;
 }
 
-.mobileMenuWrapper li {
+.mobileMenuWrapper li a,
+button {
     font-size: 1.5em;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
-.mobileMenuWrapper li a:hover {
+.mobileMenuWrapper li a:hover,
+button:hover {
     color: rgb(95, 197, 228);
     filter: drop-shadow(0 0 0.75rem rgb(113, 165, 255));
 }
 
+.sendEmail a {
+    all: unset;
+}
+
 .sendEmail {
+    display: block;
     margin-top: 7%;
     background-color: rgb(67, 148, 162);
     width: 25%;
