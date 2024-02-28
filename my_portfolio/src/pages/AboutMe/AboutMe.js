@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser';
 import React, { useState, useEffect, useRef } from "react";
 import { useSpring, animated } from "react-spring";
-import image from '../../assets/images/about_me.png'
+import image from '../../assets/images/persImg.JPG';
 import './AboutMe.css'
 import { Element } from 'react-scroll';
 
@@ -35,42 +35,35 @@ function AboutMe() {
     }, [])
 
     const style = {
-        // position: 'relative',
+        position: 'relative',
+        height: '100%',
         padding: '10px',
-        width: '100%',
-        minHeight: '350px',
-        display: 'flex',
-        flexWrap: 'wrap',
+        minHeight: '450px',
+        height: 'fit-content',
+        display: 'grid',
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection: 'column',
     }
 
     const genStyles = {
-        width: '45%',
+        width: '80%',
+        fontSize: '2vh',
         margin: '4%',
-        position: 'absolute',
-        fontSize: '1.5em',
-        flex: '1',
+        color: 'white',
+        margin: '2%',
         padding: '3%',
         borderRadius: '10px',
         boxSizing: 'border-box',
-        zIndex: '1000',
         background: 'linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(255, 255, 255, 0.2)',
         boxShadow: '2px 2px 15px -5px rgb(255, 255, 255)',
-        fontSize: 'large',
-        color: 'white',
-        margin: '2%',
     }
 
     const textStyle1 = {
-        top: '0',
-        right: '0',
-        width: '50%',
+        justifySelf:'end',
     }
     const textStyle2 = {
-        left: '0',
-        bottom: '0',
-        width: '50%',
+        verticalAlign: 'bottom',
     }
 
     return (<>
@@ -82,7 +75,7 @@ function AboutMe() {
                 <div className='main_container' style={style}>
                     <animated.div
                         style={{ ...genStyles, ...textStyle1, ...imgSpringProps }}>
-                        <img src={image} className='selfImg' />
+                        <img className='selfImg' />
                         <h2>About Me</h2>
                         <hr />
                         <p>

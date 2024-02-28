@@ -1,5 +1,5 @@
 .form {
-    width: 50%;
+    width: 60vw;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -34,9 +34,27 @@ textarea {
     margin-top: 20px;
     border: none;
     outline: none;
-    background-color: transparent !important;
-    ;
+    background: transparent !important;
 }
+
+/* input[type='name']:-webkit-autofill:focus,
+input[type='name']:-webkit-autofill:active {
+    background: transparent !important;
+    border: none;
+    outline-width: 0;
+    outline: none !important;
+} */
+
+input[type='name']:-webkit-autofill,
+input[type='name']:-webkit-autofill:focus,
+input[type='name']:-webkit-autofill:active,
+input[type='email']:-webkit-autofill,
+input[type='email']:-webkit-autofill:focus,
+input[type='email']:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
 
 textarea::placeholder {
     color: black;
@@ -58,7 +76,7 @@ button[type='submit'] {
     color: #580062;
     cursor: pointer;
     border-radius: 20px;
-    border:none;
+    border: none;
     width: 65%;
 }
 

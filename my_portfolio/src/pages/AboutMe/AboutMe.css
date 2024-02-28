@@ -46,21 +46,32 @@ hr {
 
 .bckImg {
     background: url('../../assets/images/about_me.png') no-repeat;
+    object-fit: cover;
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
 }
 
 .selfImg {
-    width: 50%;
-    height: 250px;
+    padding: 15%;
     border-radius: 50%;
+    background: url('../../assets/images/persImg.JPG');
+    background-position: center;
+    background-size: cover;
     float: left;
     shape-outside: circle();
     margin: 8% 7% 7% 0;
+    border: 2px solid rgb(255, 255, 255);
+    transition: all 0.5s linear;
 }
 
-.main_container p{
+.selfImg:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.main_container p {
     margin: 0;
     padding: 0;
     text-align: justify;
