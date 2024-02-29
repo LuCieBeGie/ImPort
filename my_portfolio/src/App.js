@@ -11,8 +11,6 @@ function App() {
 
   const toggle = () => {
     setIsOpen(!isOpen)
-    console.log('ok');
-    // console.log(isOpen);
   }
   return (<>
     <BrowserRouter>
