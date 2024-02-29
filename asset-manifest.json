@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ImPort/static/css/main.8efad8fd.css",
-    "main.js": "/ImPort/static/js/main.bd2861ea.js",
-    "static/js/787.128fc6e9.chunk.js": "/ImPort/static/js/787.128fc6e9.chunk.js",
-    "static/media/project_background.jpg": "/ImPort/static/media/project_background.344212d9f36dc8a4d5a2.jpg",
-    "static/media/about_me.png": "/ImPort/static/media/about_me.8147d11e372b937af515.png",
-    "static/media/skills.jpg": "/ImPort/static/media/skills.781e8aa555156b013f5e.jpg",
-    "static/media/persImg.JPG": "/ImPort/static/media/persImg.25952f4086026b01fa4c.JPG",
-    "static/media/background.jpg": "/ImPort/static/media/background.3b84c5e5c261dbffac8e.jpg",
-    "static/media/SourceSerifPro-Bold.ttf": "/ImPort/static/media/SourceSerifPro-Bold.4e034fc18058dc3f4d21.ttf",
-    "static/media/CV.pdf": "/ImPort/static/media/CV.ff47cbfd9f95babb3bb4.pdf",
-    "static/media/LaBelleAurore-Regular.ttf": "/ImPort/static/media/LaBelleAurore-Regular.bc43b15661f3e942b3f6.ttf",
-    "index.html": "/ImPort/index.html",
-    "main.8efad8fd.css.map": "/ImPort/static/css/main.8efad8fd.css.map",
-    "main.bd2861ea.js.map": "/ImPort/static/js/main.bd2861ea.js.map",
-    "787.128fc6e9.chunk.js.map": "/ImPort/static/js/787.128fc6e9.chunk.js.map"
+    "main.css": "/Portfolio/static/css/main.5b3289a6.css",
+    "main.js": "/Portfolio/static/js/main.2ff34d30.js",
+    "static/js/787.128fc6e9.chunk.js": "/Portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/project_background.jpg": "/Portfolio/static/media/project_background.344212d9f36dc8a4d5a2.jpg",
+    "static/media/about_me.png": "/Portfolio/static/media/about_me.8147d11e372b937af515.png",
+    "static/media/skills.jpg": "/Portfolio/static/media/skills.781e8aa555156b013f5e.jpg",
+    "static/media/persImg.JPG": "/Portfolio/static/media/persImg.25952f4086026b01fa4c.JPG",
+    "static/media/background.jpg": "/Portfolio/static/media/background.3b84c5e5c261dbffac8e.jpg",
+    "static/media/SourceSerifPro-Bold.ttf": "/Portfolio/static/media/SourceSerifPro-Bold.4e034fc18058dc3f4d21.ttf",
+    "static/media/CV.pdf": "/Portfolio/static/media/CV.ff47cbfd9f95babb3bb4.pdf",
+    "static/media/LaBelleAurore-Regular.ttf": "/Portfolio/static/media/LaBelleAurore-Regular.bc43b15661f3e942b3f6.ttf",
+    "index.html": "/Portfolio/index.html",
+    "main.5b3289a6.css.map": "/Portfolio/static/css/main.5b3289a6.css.map",
+    "main.2ff34d30.js.map": "/Portfolio/static/js/main.2ff34d30.js.map",
+    "787.128fc6e9.chunk.js.map": "/Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8efad8fd.css",
-    "static/js/main.bd2861ea.js"
+    "static/css/main.5b3289a6.css",
+    "static/js/main.2ff34d30.js"
   ]
 }
