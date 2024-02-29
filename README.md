@@ -1,3 +1,3 @@
 # Portfolio
- 
-https://luciebegie.github.io/ImPort/
+Click here to visit my personal portfolio app 
+https://luciebegie.github.io/Portfolio/
