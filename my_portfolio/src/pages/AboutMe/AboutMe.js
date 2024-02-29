@@ -1,12 +1,14 @@
-import emailjs from '@emailjs/browser';
 import React, { useState, useEffect, useRef } from "react";
 import { useSpring, animated } from "react-spring";
-import image from '../../assets/images/persImg.JPG';
+import { Waypoint } from 'react-waypoint'
+
 import './AboutMe.css'
 import { Element } from 'react-scroll';
 
 function AboutMe() {
     const [isLoaded, setLoaded] = useState(false);
+    const [inView, setInView] = useState(false);
+
     const springProps = useSpring({
         opacity: 1,
         duration: 5000,
@@ -14,9 +16,10 @@ function AboutMe() {
         reset: isLoaded,
         transform: 'translateX(0px)',
         from: {
-            opacity: 0,
-            transform: 'translateX(-250px)'
-        }
+            opacity: !inView ? 0 : 1,
+            transform: 'translateX(-250px)',
+            y: !inView ? 24 : 0,
+        },
     });
     const imgSpringProps = useSpring({
         opacity: 1,
@@ -25,9 +28,10 @@ function AboutMe() {
         reset: isLoaded,
         transform: 'translateX(0px)',
         from: {
-            opacity: 0,
-            transform: 'translateX(250px)'
-        }
+            opacity: !inView ? 0 : 1,
+            transform: 'translateX(250px)',
+            y: !inView ? 24 : 0,
+        },
     })
 
     useEffect(() => {
@@ -60,10 +64,11 @@ function AboutMe() {
     }
 
     const textStyle1 = {
-        justifySelf:'end',
+        justifySelf: 'end',
     }
     const textStyle2 = {
         verticalAlign: 'bottom',
+        marginBottom: '5%',
     }
 
     return (<>
@@ -72,9 +77,11 @@ function AboutMe() {
                 <img className='styleImg bckImg' />
             </animated.div>
             {isLoaded ?
-                <div className='main_container' style={style}>
+                <div className='main_container' style={style} >
+                    <Waypoint onEnter={() => setInView(true)} />
                     <animated.div
-                        style={{ ...genStyles, ...textStyle1, ...imgSpringProps }}>
+                        style={{ ...genStyles, ...textStyle1, ...imgSpringProps }}
+                    >
                         <img className='selfImg' />
                         <h2>About Me</h2>
                         <hr />
