@@ -15,7 +15,7 @@ function Home() {
                         <br />Junior Web Developer
                     </h1>
                     <button className='download'>
-                        <a href={require('../../assets/pdf/CV.pdf')} download="myFile">
+                        <a href={require('../../assets/pdf/CV.pdf')} download="CV_LUS_Har">
                             Download CV
                         </a>
                     </button>
